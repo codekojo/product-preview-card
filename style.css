@@ -31,23 +31,49 @@ p {
   width: 680px;
   display: flex;
   overflow: hidden;
-  /* margin: 2rem; */
+  margin: 1rem;
+  border-radius: 0.5rem;
 }
 
 .img {
-  /* flex: 1; */
-  width: calc(680px / 2);
+  flex: 1;
+  display: flex;
 }
 
 .img > img {
-  height: 500px;
+  flex: 1;
   width: 100%;
-  /* flex: 1; */
+  height: auto;
+  object-fit: contain;
 }
 
+/* Second Card Component */
 .card__content {
-  /* display: flex; */
-  /* flex: 1; */
-  width: calc(680px / 2);
+  flex: 1;
+  display: flex;
   background-color: var(--white);
+}
+
+.card__content__details {
+  padding: 2rem;
+}
+
+.card__content__details > p:first-child {
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0.4rem;
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 2rem;
+}
+
+.tommy {
+  font-family: Fraunces, sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.card__description {
+  /* font-family: Montserrat, sans-serif;
+  color: gray;
+  word-spacing: 0.5rem; */
 }
